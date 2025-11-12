@@ -1,54 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    // Déclaration et affectation des variables
+    signed char c = -100;          unsigned char uc = 200;
+    signed short s = -30000;       unsigned short us = 60000;
+    signed int i = -123456;        unsigned int ui = 123456U;
+    signed long l = -123456789L;   unsigned long ul = 123456789UL;
+    signed long long ll = -9876543210LL; unsigned long long ull = 9876543210ULL;
+    float f = 3.14F; double d = 2.718281828; long double ld = 1.6180339887L;
 
-    // Type char
-    signed char c1 = -100;
-    unsigned char c2 = 200;
-
-    // Type short
-    signed short s1 = -30000;
-    unsigned short s2 = 60000;
-
-    // Type int
-    signed int i1 = -123456;
-    unsigned int i2 = 123456U;
-
-    // Type long int
-    signed long int l1 = -123456789L;
-    unsigned long int l2 = 123456789UL;
-
-    // Type long long int
-    signed long long int ll1 = -123456789012345LL;
-    unsigned long long int ll2 = 123456789012345ULL;
-
-    // Types flottants (pas de signed/unsigned)
-    float f = 3.14F;
-    double d = 2.718281828;
-    long double ld = 1.6180339887L;
-
-    // Affichage des valeurs
-    printf("=== Affichage des variables de base ===\n\n");
-
-    printf("signed char      : %d\n", c1);
-    printf("unsigned char    : %u\n\n", c2);
-
-    printf("signed short     : %d\n", s1);
-    printf("unsigned short   : %u\n\n", s2);
-
-    printf("signed int       : %d\n", i1);
-    printf("unsigned int     : %u\n\n", i2);
-
-    printf("signed long int  : %ld\n", l1);
-    printf("unsigned long int: %lu\n\n", l2);
-
-    printf("signed long long int  : %lld\n", ll1);
-    printf("unsigned long long int: %llu\n\n", ll2);
-
-    printf("float            : %.2f\n", f);
-    printf("double           : %.9f\n", d);
-    printf("long double      : %.10Lf\n", ld);
+    printf("signed char / unsigned char      : %d / %u\n", c, uc);
+    printf("signed short / unsigned short    : %d / %u\n", s, us);
+    printf("signed int / unsigned int        : %d / %u\n", i, ui);
+    printf("signed long / unsigned long      : %ld / %lu\n", l, ul);
+    printf("signed long long / unsigned long long : %lld / %llu\n", ll, ull);
+    printf("float / double / long double     : %.2f / %.9f / %.10Lf\n", f, d, ld);
 
     return 0;
 }
